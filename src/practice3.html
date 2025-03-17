@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-400 flex items-center justify-center min-h-screen">
+    <div class="w-96 bg-white rounded-2xl shadow-lg">
+
+        <!-- Dashborad -->
+        <div class="bg-blue-800 text-white p-4 rounded-t-xl">
+            <h1 class="text-2xl font-bold">Smart Home Dashboard</h1>
+            <p class="text-sm">Temprature set to 87F</p>
+        </div>
+
+        <!-- Living light, yellow button -->
+        <div clas="p-4 space-y-4">
+            <div class="bg-blue-50 p-4 rounded-xl flex items-center justify-between my-4">
+                <div>
+                    <h2 class="font-semibold">Living room lights</h2>
+                    <p class="text-sm text-gray-500">Last updated: 10:8:47 pm</p>
+                </div>
+                <div class="bg-yellow-400 w-10 h-6 rounded-full flex items-center p-1">
+                    <div class="bg-white w-4 h-4 rounded-full shadow-md transform translate-x-4"></div>
+                </div>
+            </div>
+
+            <!-- Tempearture -->
+            <div class="bg-blue-50 p-4 rounded-xl flex flex-col items-center">
+                <h2 class="font-semibold">Temprature control</h2>
+                <div class="flex items-center space-x-4 mt-2">
+                    <button class="bg-blue-100 text-2xl text-blue-500 w-40 h-10 flex items-center justify-center rounded-lg">-</button>
+                    
+                    <button class="bg-blue-100 text-2xl text-blue-500 w-40 h-10 flex items-center justify-center rounded-lg">+</button>
+                    <!-- <span class="text-3xl text-red-500">90F</span> -->
+                </div>
+            </div>
+            <div class="bg-blue-50 p-4 rounded-xl flex items-center justify-between my-4">
+                <div>
+                    <h2 class="font-semibold">Front Door Lock</h2>
+                    <p class="text-sm text-gray-500">Last activity: 4:27:32 pm</p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-green-600 text-xl">🔒</span>
+                    <span class="bg-green-500 text-white px-2 py-1 rounded-lg">Locked</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showAlert()">Show alert</button>
+    <button onclick="PromptName()">Prompt Name</button>
+    <button onclick="confirm()">Confirm</button>
+
+    
+    <p id="Juhi"></p>
+    <button id="myButton">Click Me</button>
+    <div id="mouseA">Mouseover and out</div>
+    <div id="output"></div>
+
+    <script>    
+        const output=document.getElementById('output')
+        document.getElementById('myButton').addEventListener ('click', () =>output.textContent='Button Clicked')
+        document.getElementById('myButton').addEventListener('dbclick', () =>output.textContent='Button is double Clicked')
+
+        document.getElementById('mouseA').addEventListener ('mouseover', () =>output.textContent='mouse over the area')
+        document.getElementById('mouseA').addEventListener('mouseout', () =>output.textContent='mouse out')
+        //mousedown
+        //mouseup
+        //keyboard events
+        document.getElementById('mouseA').addEventListener('mousedown', () =>output.textContent='mouse down')
+
+        //document.getElementById('myinput').addEventListener('keydown', (event) =>output.textContent=`key down:${event.key})
+        
+
+        function showAlert(){
+            alert("This alert is for Show Alert function")
+        }
+        function PromptName(){
+            let name=prompt("what is your name")
+            if(name!=null&& name!=''){
+                document.getElementById('Juhi').innerText='Hello,', +name+'';
+            }else{
+                document.getElementsById('Juhi').innerText='you did not enter anything'
+            }
+        }
+        function Confirm(){
+            let response= confirm('r u sure u want to proceed?')
+            if(response){
+                document.getElementById('Juhi').innerText="you choose to proceed"
+            }else{
+                document.getElementById('Juhi').innerText="you choose to cancel"
+            }
+        }
+let age=45
+let message="you are" +age+ "years old"
+console.log(message)
+let name=test
+document.getElementById('juhi').innerText= `Hello, ${name}`
+
+
+//function
+function showAlert(){
+    alert('hello everyone')
+}
+show()
+
+
+//function with argument
+function name(para1, para2){
+
+}
+
+
+//objects
+let user1= new object()  //obj constructor
+let user2={}  //literal syntax
+let user={
+    name:'test',  //key "name" and store value "test"
+    age:45
+}
+
+
+//get property values of obj
+alert(user.name)
+alert(user.age)
+delete user.age;
+
+
+
+
+//create an empty obj
+//add the property name with value
+//add property surname with value
+//change the value of the name to alex
+//remove the property name from the object
+
+let obj={};
+person.name="juhi";
+person.surname="df";
+
+let amount={
+    a:1000,
+    b:500,
+    c:600,
+}
+let sum=0
+console.log(sum);
+for(let key in amount){
+    sum+=amount[key]
+}
+alert(sum)
+
+    </script>
+</body>
+</html>

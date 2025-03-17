@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="bg-amber-200">
+        <!--Typography-->
+        <h1 class="text-4xl font-bold text-center font-serif text-red-400 italic underline">Welcome to Tailwind CSS</h1>
+        <!--Visibility and Display-->
+        <div>
+            <div class="bg-blue-200 p-4 mb-2 block">A</div>
+            <div class="bg-purple-200 p-4 mb-2 inline-block">B</div>
+            <div class="bg-cyan-200 p-4 hidden">C</div> <!--this is hidden the division-->
+            <div class="bg-emerald-200 p-4 visible">D</div>
+        </div>
+        <!--float and clear-->
+        <div class="mb-6">
+            <div class="bg-gray-400 float-left p-4">Float left</div>
+            <div class="bg-gray-400 float-right p-4">Float Right</div>
+            <div class="clear-both bg-gray-500 p-4 mt-4">clear float</div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-red-200 p-4">Grid1</div>
+            <div class="bg-purple-300 p-4">Grid1</div>
+            <div class="bg-amber-600 p-4">Grid1</div>
+        </div>
+    </div>
+</body>
+</html>
